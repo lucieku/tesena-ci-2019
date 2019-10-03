@@ -24,5 +24,10 @@ pipeline {
        sh 'npm run build'
        }
       }
+     stage('Sass'){
+             steps {
+             sh 'npm rebuild node -saas'
+             }
+            }
   }
 }
