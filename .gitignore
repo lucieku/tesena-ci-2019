@@ -5,7 +5,7 @@
 # dependencies
 /node_modules
 
-# testing
+# testing and testing
 /coverage
 
 # production
