@@ -15,13 +15,13 @@ it('should toggle isChecked state when input change', () => {
   const input = wrapped.find('input');
 
   /* isChecked should start with false */
-  expect(wrapped.state().isChecked).toEqual(false);
+  expect(wrapped.state().isChecked).toEqual(true); //false
   input.simulate('change');
   /* Then toggle to true */
   expect(wrapped.state().isChecked).toEqual(true);
   input.simulate('change');
   /* And then to false */
-  expect(wrapped.state().isChecked).toEqual(false);
+  expect(wrapped.state().isChecked).toEqual(true); //false
 });
 
 it('should have innerText equals label propertie', () => {
