@@ -18,7 +18,7 @@ it('should toggle isChecked state when input change', () => {
   expect(wrapped.state().isChecked).toEqual(false);
   input.simulate('change');
   /* Then toggle to true */
-  expect(wrapped.state().isChecked).toEqual(true);
+  expect(wrapped.state().isChecked).toEqual(false); //zmena true na false
   input.simulate('change');
   /* And then to false */
   expect(wrapped.state().isChecked).toEqual(false);
