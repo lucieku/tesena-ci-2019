@@ -19,7 +19,7 @@ afterEach(() => {
 });
 
 it('shows a shelf', () => {
-  expect(wrapped.find(Shelf).length).toEqual(0);
+  expect(wrapped.find(Shelf).length).toEqual(1); //zmena
 });
 
 it('shows a floating cart', () => {
