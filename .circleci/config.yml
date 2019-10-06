@@ -17,9 +17,9 @@ jobs:
             - .
       # Save test-results
       - store_test_results:
-          path: test/test-results.xml
+          path: test-results/test/test-results.xml
       - store_artifacts:
-          path: test/test-results.xml
+          path: test-results/test/test-results.xml
 workflows:
   version: 2
   build-deploy:
