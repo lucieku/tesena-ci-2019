@@ -11,8 +11,6 @@ jobs:
       - run: npm install
       - run: npm run test
       - run: npm run build
-      - store_test_results:
-          path: test-results
       - persist_to_workspace:
           root: .
           paths:
@@ -21,6 +19,8 @@ workflows:
   version: 2
   build-deploy:
     jobs:
+      - store_test_results:
+        path: cypress/results
       - build:
           filters:
             branches:
