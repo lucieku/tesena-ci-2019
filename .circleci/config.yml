@@ -1,6 +1,4 @@
 demo: &demo
-defaults:
-  working_directory: ~/tesena-ci-2019
   docker:
     - image: circleci/node:8.11.3
 
