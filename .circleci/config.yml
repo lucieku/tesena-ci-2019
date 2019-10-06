@@ -10,8 +10,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run test
-      - store_test_results:
-        path: tesena-ci-2019/results
+      - store_test_results: tesena-ci-2019/results
       - run: npm run build
       - persist_to_workspace:
           root: .
