@@ -1,4 +1,6 @@
 demo: &demo
+defaults:
+  working_directory: ~/tesena-ci-2019
   docker:
     - image: circleci/node:8.11.3
 
@@ -16,11 +18,10 @@ jobs:
           paths:
             - .
       # Save test-results
-      - run: mkdir -p test-results
       - store_test_results:
-          path: circleci/test-results
+          path: test/test-results.xml
       - store_artifacts:
-          path: circleci/test-results 
+          path: test/test-results.xml
 workflows:
   version: 2
   build-deploy:
