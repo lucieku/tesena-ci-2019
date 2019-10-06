@@ -20,7 +20,7 @@ workflows:
   build-deploy:
     jobs:
       - store_test_results:
-        path: cypress/results
+        path: tesena-ci-2019/results
       - build:
           filters:
             branches:
